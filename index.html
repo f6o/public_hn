@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111827" />
+    <link href="./_app/immutable/entry/start.9kpL8koO.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/C0Ur2kIw.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BCpzAB9l.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/D8KlISdQ.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.BPInPuxo.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Dgb1IGVA.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Cqc0qioa.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Bw26_Qg7.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/C3118rie.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.EabW5QLM.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/2.BE2p4kT-.js" rel="modulepreload">
+		<!--1uha8ag--><!----><title>Crawling HN</title>
+		<link href="./_app/immutable/assets/2.EYW6cYhO.css" rel="stylesheet">
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><main class="svelte-1uha8ag"><header class="svelte-1uha8ag"><h1 class="svelte-1uha8ag">Crawling HN</h1> <!--[-1--><!--]--></header> <section class="filters svelte-1uha8ag" aria-label="絞り込み"><input value="" type="search" placeholder="タイトルを検索" class="svelte-1uha8ag"/> <select class="svelte-1uha8ag"><option value="" selected="">すべてのソース</option><!--[--><!--]--></select> <select aria-label="取得期間" class="svelte-1uha8ag"><option value="0" selected="">すべての期間</option><option value="1">直近1日</option><option value="3">直近3日</option><option value="7">直近1週間</option></select> <label class="svelte-1uha8ag">最低スコア <input value="55" type="number" min="0" max="100" class="svelte-1uha8ag"/></label></section> <!--[0--><p class="status svelte-1uha8ag">データを読み込んでいます…</p><!--]--> <!--[-1--><!--]--> <p class="count svelte-1uha8ag">0 items</p> <ol class="svelte-1uha8ag"><!--[--><!--]--></ol></main><!--]--><!----><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1sf03rt = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.9kpL8koO.js"),
+						import("./_app/immutable/entry/app.BPInPuxo.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+
+					if ('serviceWorker' in navigator) {
+						const script_url = './service-worker.js';
+						const policy = globalThis?.window?.trustedTypes?.createPolicy(
+							'sveltekit-trusted-url',
+							{ createScriptURL(url) { return url; } }
+						);
+						const sanitised = policy?.createScriptURL(script_url) ?? script_url;
+						addEventListener('load', function () {
+							navigator.serviceWorker.register(sanitised);
+						});
+					}
+				}
+			</script>
+		</div>
+  </body>
+</html>
