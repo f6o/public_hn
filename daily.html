@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111827" />
+    <link href="./_app/immutable/entry/start.C6ASiFPw.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BH_7OSvR.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CqwuCOsq.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/S0v7wV_0.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CbhxvFTm.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.DkI8cxPI.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/UElPy215.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Dh2n-RXv.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/C4bGnq5-.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CitPFytS.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.BLIaKDJa.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/C43sANEY.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/3.lTb9doWw.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DftqLo8E.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BUWfxoxx.js" rel="modulepreload">
+		<!--k7si0i--><!----><title>Daily Top - Crawling HN</title>
+		<link href="./_app/immutable/assets/0.BuzjBLZM.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/3.BmqDkoG-.css" rel="stylesheet">
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><!--[--><main data-syncing="true" class="svelte-k7si0i"><header class="svelte-k7si0i"><h1 class="svelte-k7si0i">Crawling HN · Daily Top 10</h1> <nav class="svelte-k7si0i"><!--[-1--><!--]--> <a href="./search" class="svelte-k7si0i">検索</a></nav></header> <!--[0--><p class="status svelte-k7si0i">データを読み込んでいます…</p><!--]--> <!--[-1--><!--]--> <!--[-1--><!--]--> <!--[--><!--]--> <!--[-1--><!--]--></main><!--]--><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_zo1d5r = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/public_hn"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.C6ASiFPw.js"),
+						import("./_app/immutable/entry/app.DkI8cxPI.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+
+					if ('serviceWorker' in navigator) {
+						const script_url = './service-worker.js';
+						const policy = globalThis?.window?.trustedTypes?.createPolicy(
+							'sveltekit-trusted-url',
+							{ createScriptURL(url) { return url; } }
+						);
+						const sanitised = policy?.createScriptURL(script_url) ?? script_url;
+						addEventListener('load', function () {
+							navigator.serviceWorker.register(sanitised);
+						});
+					}
+				}
+			</script>
+		</div>
+  </body>
+</html>
